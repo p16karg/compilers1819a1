@@ -84,7 +84,7 @@ while text:		# i.e. len(text)>0
 	# get next token and position after last char recognized
 	token,pos = scan(text,transitions,accepts)
 	if token=='ERROR_TOKEN':
-		print('unrecognized input at position',pos,'of',text)
+		print('token:Error_Token',pos,'of',text)
 		break
 	print("token:",token,"text:",text[:pos])
 	# new text for next scan
